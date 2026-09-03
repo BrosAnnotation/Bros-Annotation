@@ -21,7 +21,7 @@ export function AnnotationExpertise() {
     <section className="section-pad">
       <div className="container-x grid lg:grid-cols-2 gap-12 items-center">
         {/* Left: text */}
-        <div className="reveal">
+        <div className="reveal text-center">
           <div className="badge text-primary-soft border-primary/30 mb-4">
             Annotation Expertise
           </div>
@@ -35,7 +35,7 @@ export function AnnotationExpertise() {
             evaluation, RLHF, AI safety, and human preference ranking.
           </p>
 
-          <div className="flex flex-wrap gap-2.5">
+          <div className="flex flex-wrap justify-center gap-2.5">
             {capabilities.map((cap) => (
               <span
                 key={cap}
