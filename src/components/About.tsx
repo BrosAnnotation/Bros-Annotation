@@ -1,4 +1,4 @@
-import { Users, Target, TrendingUp } from 'lucide-react';
+import { Users, Target, TrendingUp, UserRound } from 'lucide-react';
 
 const cards = [
   {
@@ -15,6 +15,11 @@ const cards = [
     icon: TrendingUp,
     title: 'Built to Scale',
     desc: 'Flexible workflows designed to support growing AI data requirements.',
+  },
+  {
+    icon: UserRound,
+    title: 'Devansh Sharma',
+    desc: 'Founder of Bros Annotation, focused on building reliable AI data annotation and evaluation solutions.',
   },
 ];
 
@@ -37,7 +42,7 @@ export function About() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {cards.map((card, i) => (
             <div
               key={card.title}
