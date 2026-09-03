@@ -4,7 +4,7 @@ import { fileURLToPath, URL } from 'node:url';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/bros-annotation/',
+  base: '/Bros-Annotation/',
   plugins: [react()],
   resolve: {
     alias: {
