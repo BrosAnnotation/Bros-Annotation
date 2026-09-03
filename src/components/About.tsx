@@ -22,7 +22,7 @@ export function About() {
   return (
     <section id="about" className="section-pad">
       <div className="container-x">
-        <div className="max-w-2xl mb-14 reveal">
+        <div className="max-w-3xl mx-auto mb-14 text-center reveal">
           <div className="badge text-accent-soft border-accent/30 mb-4">
             About Us
           </div>
