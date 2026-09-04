@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://devansh211202.github.io/bros-annotation/sitemap.xml
+Sitemap: https://brosannotation.github.io/Bros-Annotation/sitemap.xml
