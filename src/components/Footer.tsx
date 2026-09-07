@@ -42,6 +42,7 @@ export function Footer() {
                 <span className="font-display font-bold text-base text-white">
                   BROS
                 </span>
+
                 <span className="font-display text-[10px] tracking-[0.2em] text-text-muted uppercase">
                   Annotation
                 </span>
@@ -106,11 +107,11 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:brosannotation@gmail.com"
+                  href="mailto:info@brosai.org"
                   className="flex items-center gap-2.5 text-sm text-text-muted hover:text-white transition-colors"
                 >
                   <Mail size={16} className="shrink-0" />
-                  brosannotation@gmail.com
+                  info@brosai.org
                 </a>
               </li>
 
@@ -125,6 +126,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
+
         </div>
 
         {/* Copyright */}
