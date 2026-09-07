@@ -20,21 +20,29 @@ export function Navbar() {
       setScrolled(window.scrollY > 24);
 
       const sections = navLinks.map((l) => l.href.slice(1));
+
       const current = sections.find((id) => {
         const el = document.getElementById(id);
+
         if (!el) return false;
 
         const rect = el.getBoundingClientRect();
+
         return rect.top <= 120 && rect.bottom >= 120;
       });
 
-      if (current) setActiveSection(current);
+      if (current) {
+        setActiveSection(current);
+      }
     };
 
     window.addEventListener('scroll', onScroll, { passive: true });
+
     onScroll();
 
-    return () => window.removeEventListener('scroll', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
   }, []);
 
   const handleNavClick = (href: string) => {
@@ -43,7 +51,9 @@ export function Navbar() {
     const el = document.querySelector(href);
 
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
+      el.scrollIntoView({
+        behavior: 'smooth',
+      });
     }
   };
 
@@ -126,10 +136,13 @@ export function Navbar() {
       {/* Mobile menu */}
       <div
         className={`lg:hidden overflow-hidden transition-all duration-300 ${
-          mobileOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          mobileOpen
+            ? 'max-h-96 opacity-100'
+            : 'max-h-0 opacity-0'
         }`}
       >
         <ul className="container-x py-4 space-y-1 bg-bg/95 backdrop-blur-xl border-b border-border">
+
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
@@ -157,19 +170,21 @@ export function Navbar() {
               Work With Us
             </button>
           </li>
+
         </ul>
       </div>
     </header>
   );
 }
 
+/* Logo */
 function Logo() {
   return (
-    <div className="relative w-12 h-12 flex items-center justify-center overflow-hidden rounded-lg">
+    <div className="relative w-9 h-9 flex items-center justify-center overflow-hidden rounded-lg">
       <img
-        src="/logo bros.jpg"
+        src="/Bros-Annotation/logo bros.jpg"
         alt="Bros Annotation"
-        className="w-12 h-12 object-contain"
+        className="w-9 h-9 object-contain"
       />
     </div>
   );
