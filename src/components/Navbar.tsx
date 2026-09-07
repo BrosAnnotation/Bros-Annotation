@@ -180,11 +180,11 @@ export function Navbar() {
 /* Logo */
 function Logo() {
   return (
-    <div className="relative w-9 h-9 flex items-center justify-center overflow-hidden rounded-lg">
+    <div className="relative w-12 h-12 flex items-center justify-center overflow-hidden rounded-lg">
       <img
-        src="/Bros-Annotation/logo bros.jpg"
+        src="/logo bros.jpg"
         alt="Bros Annotation"
-        className="w-9 h-9 object-contain"
+        className="w-12 h-12 object-contain"
       />
     </div>
   );
