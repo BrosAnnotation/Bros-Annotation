@@ -23,6 +23,7 @@ export function Navbar() {
       const current = sections.find((id) => {
         const el = document.getElementById(id);
         if (!el) return false;
+
         const rect = el.getBoundingClientRect();
         return rect.top <= 120 && rect.bottom >= 120;
       });
@@ -40,6 +41,7 @@ export function Navbar() {
     setMobileOpen(false);
 
     const el = document.querySelector(href);
+
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
@@ -163,11 +165,11 @@ export function Navbar() {
 
 function Logo() {
   return (
-    <div className="relative w-9 h-9 flex items-center justify-center overflow-hidden rounded-lg">
+    <div className="relative w-12 h-12 flex items-center justify-center overflow-hidden rounded-lg">
       <img
-        src="/Bros-Annotation/logo bros.jpg"
+        src="/logo bros.jpg"
         alt="Bros Annotation"
-        className="w-9 h-9 object-contain"
+        className="w-12 h-12 object-contain"
       />
     </div>
   );
